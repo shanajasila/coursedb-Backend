@@ -6,5 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 
 public class CourseController {
-
+    @GetMapping("/view")
+    public String viewcourse(){
+        return "Welcome to view page";
+    }
 }
